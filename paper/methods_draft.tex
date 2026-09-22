@@ -1,0 +1,85 @@
+% Draft based on protocol/PROTOCOL.md and amendment 1, read 2026-09-22.
+% Parent must reconcile final completed-run details and supply actual results.
+\section{Benchmark and routing methods}
+\label{sec:methods}
+
+\subsection{Voltage decision and information}
+
+The feeder uses the 33-bus data associated with Baran and Wu~\cite{baran1989reconfiguration}. The task is a voltage-band decision under a balanced steady-state model, not dispatch optimization or a field-safety claim. For voltage magnitudes $v$, define
+\begin{equation}
+ m(v)=\min\!\left\{\min_i v_i-0.95,\;1.05-\max_i v_i\right\}.
+ \label{eq:margin}
+\end{equation}
+A resolved reference point is feasible when $m(v)\geq0$. The neural margin $m_N$ uses the ensemble-mean minimum and maximum voltages. The spread $\sigma$ is the sample standard deviation of the five individual member margins. LinDistFlow supplies a margin $m_L$ from approximate voltage drops on the supplied radial network~\cite{baran1989reconfiguration,turitsyn2011}.
+
+The 71 operating features comprise 32 active and 32 reactive loads, six photovoltaic outputs and the slack voltage. They exclude topology. The nominal generator samples a global load multiplier in $[0.3,1.1]$, per-bus multipliers in $[0.7,1.3]$ and slack voltage in $[0.97,1.05]$ pu. Photovoltaic output is zero with probability $0.25$; otherwise irradiance, plant scaling and retained output are sampled independently within the recorded configuration. A secondary original-topology test raises photovoltaic ratings by $60\%$ and uses global load multipliers in $[0.2,0.8]$.
+
+\subsection{Training and topology allocation}
+
+Three training seeds each generate 30,000 nominal-topology training points, 10,000 separate probe-training points and 10,000 threshold-calibration points. Each ensemble contains five independently initialized ReLU networks with two 32-unit layers. Networks use Adam, batch size 256, learning rate $10^{-3}$ and at most 250 epochs. Early stopping uses a 10\% internal validation split, patience of 25 epochs and tolerance $10^{-7}$. Input and regression-target scalers are fitted on training data. Stopping histories and warnings are retained.
+
+The inventory contains 59 connected radial nonbaseline single branch exchanges. Fifteen are development topologies, including the two exchanges examined during the exploratory study; the remaining 13 development exchanges follow a recorded hash rule. The other 44 exchanges form the primary held-out set. This protocol was frozen after exploratory analysis, not preregistered before any observation.
+
+A physics-augmented residual network uses two 64-unit layers and the same optimizer and stopping settings. Let $\ell$ contain the supplied minimum and maximum LinDistFlow voltages. The corrected prediction is
+\begin{equation}
+ \hat y_R(x,\ell)=\ell+h_\theta([x,\ell]).
+ \label{eq:residual}
+\end{equation}
+The network fits standardized exact-minus-linear extrema by squared-error regression. Its corrected extrema define margin $m_R$. Each training seed uses 3,000 points from each development topology and 3,000 from the original topology, for 48,000 points. Held-out-topology labels enter neither fitting nor calibration. This baseline receives current-physics information rather than an explicit graph encoding, and its additional training data are reported as a cost.
+
+Three independent test seeds generate 10,000 operating points each, paired across the original feeder and all 59 exchanges. Three further nominal-topology photovoltaic-growth sets give 1,830,000 generated topology--scenario pairs. Reuse across training runs and verifier variants does not create additional independent labels. The three training runs crossed with three test draws yield nine model--test combinations per condition.
+
+\subsection{Routes and frozen thresholds}
+
+A route combines a provisional verdict with a score; larger scores receive exact evaluation first. Table~\ref{tab:policies} defines the twelve score routes. Let $a=\mathbf{1}[m_N\geq0]$, $b=\mathbf{1}[m_L\geq0]$ and $c=\mathbf{1}[m_R\geq0]$. The violation classifier estimates $p$ from the original training set. A separate two-layer, 32-unit probe fits $\log_{10}(|m_N-m|+\epsilon)$ using $[x,m_N,\sigma]$ from the probe split, with $\epsilon=10^{-6}$. Exponentiating its output gives $\hat e$. Both probes use the same optimizer settings as the ensemble. All five neural score routes retain verdict $a$, including the classifier-confidence route. PhyRoute-D also retains that verdict and scores disagreement before agreement:
+\begin{equation}
+ s_D=\begin{cases}
+ |m_L|,&\mathbf{1}[m_N\geq0]\ne\mathbf{1}[m_L\geq0],\\
+ -|m_L|,&\text{otherwise}.
+ \end{cases}
+ \label{eq:disagreement}
+\end{equation}
+\begin{table}[tb]
+\caption{Provisional approvals and escalation scores. A score of $-\infty$ makes a point ineligible for fallback. Physics-only and residual routes replace the stale neural verdict before deferral.}
+\label{tab:policies}
+\centering\small
+\begin{tabular}{lll}
+\toprule
+Route & Approve & Score \\
+\midrule
+Neural margin & $a$ & $-|m_N|$ \\
+Ensemble spread & $a$ & $\sigma$ \\
+Spread-normalized margin & $a$ & $-|m_N|/(\sigma+\epsilon)$ \\
+Classifier confidence & $a$ & $-|p-0.5|$ \\
+Learned error ratio & $a$ & $\hat e/(|m_N|+\epsilon)$ \\
+PhyRoute-D & $a$ & $s_D$ in Eq.~\eqref{eq:disagreement} \\
+Minimum margin & $a$ & $-\min(|m_N|,|m_L|)$ \\
+Neural approval-only & $a$ & $-m_L$ if $a=1$, else $-\infty$ \\
+Physics only & $b$ & $-|m_L|$ \\
+Physics approval-only & $b$ & $-m_L$ if $b=1$, else $-\infty$ \\
+Joint approval & $a\land b$ & $-|m_L|$ \\
+Residual MLP & $c$ & $-|m_R|$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Always-exact evaluation and exact evaluation whenever topology changes provide reference routes. An exact result replaces the provisional decision on a resolved escalated point.
+
+Primary thresholds are the nominal calibration-score quantiles for $5\%$, $10\%$ and $20\%$ escalation, then remain fixed. The $10\%$ setting leads the comparison. Realized test escalation can differ because of shift, ties or approval-only eligibility. Secondary test-score quantiles impose retrospective budgets of $5\%$, $10\%$, $20\%$ and $30\%$. These diagnose ranking at matched capacity; they are not deployable frozen thresholds. Test labels select neither primary threshold nor score.
+
+For split conformal calibration, define the residual and order-statistic rank
+\begin{equation}
+ r_j=|m_N(x_j)-m(v_j)|,\qquad
+ k=\left\lceil(n_{\mathrm{cal}}+1)(1-\alpha)\right\rceil.
+\end{equation}
+The interval radius is the $k$th sorted residual. We use $\alpha=0.001$, $0.01$ and $0.05$, and defer when the margin interval contains zero. Its usual marginal coverage statement requires exchangeability~\cite{angelopoulos2023}; it does not certify risk after topology shift.
+
+\subsection{Verifier mismatch and numerical reference}
+
+Nine verifier conditions retain the same physical feeder and injections. The first two use the correct current network and the stale original network. Six use current topology with all resistances and reactances scaled by $0.8$, $0.9$, $0.95$, $1.05$, $1.1$ or $1.2$. The ninth applies independent per-branch resistance/reactance factors in $[0.9,1.1]$, with one deterministic parameter realization per topology. The residual model receives the same perturbed extrema as the other physics routes. Thresholds remain those calibrated under the nominal original verifier.
+
+Reference labels first use strict backward/forward sweep. Failed batches are subdivided to identify difficult draws. These are retried using pandapower's Newton--Raphson solver~\cite{thurner2018}. Only finite, converged outputs receive labels. If both solves fail, the row remains unresolved, which does not establish physical infeasibility. A recorded amendment introduced this handling after a predetermined cross-check exposed a failed batch, before comparative evaluation. Generated, resolved and unresolved counts are retained for every condition, and paired method comparisons use the same resolved subset.
+
+\subsection{Endpoints and computation}
+
+We measure unsafe approvals per resolved point, accepted point and true violation, plus false rejections per feasible point, acceptance coverage, accuracy and realized escalation. Summaries include topology macro averages, worst-topology values and seed ranges. These conditional metrics do not bound unresolved-case risk. Repeated predictions on shared operating points cannot justify independent-binomial uncertainty across feeders. Complete-route timing includes inference, routing and fallback, with single-threaded BLAS, warm-up, repeated varied inputs, hardware/software records and mean, median and p95 latency. Reference-label retry costs are outside the timed workloads.

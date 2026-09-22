@@ -1,0 +1,111 @@
+% Final study draft. Human interpretation, authorship and submission approval pending.
+% Numerical sources: results/revised/analysis/{summary,latency}.json.
+\begin{abstract}
+Voltage surrogates require a decision rule for invoking an exact solver after a feeder changes. We compare neural, physics-only and physics-augmented routes on a synthetic 33-bus feeder, with 15 development and 44 held-out branch exchanges, three training seeds and three test seeds. At a frozen threshold calibrated for 10\% escalation, a residual model using current LinDistFlow information yields 0.0065\% unsafe approvals and 0.0248\% false rejections, versus 0.0615\% and 0.1678\% for physics-only routing. Realized escalation is 8.40\% versus 8.66\%, but the residual route costs more computation. A 10\% impedance underestimate raises its unsafe rate to 2.24\%; stale topology raises it to 14.86\%. Of 1.83 million generated cases, 2,315 remain numerically unresolved and are excluded from decision-risk denominators. The results support learned correction with current network information, while exposing its calibration and verifier limits.
+\keywords{selective prediction, power flow, topology shift,\newline residual learning, calibration, runtime verification}
+\end{abstract}
+
+\input{introduction_related.tex}
+\input{methods_draft.tex}
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Reference coverage and comparison units}
+
+The evaluation contains all 549 expected model--test--condition cells. Of 1,830,000 distinct generated topology--scenario pairs, 1,827,685 receive converged references and 2,315 remain unresolved. All unresolved points belong to exchange \texttt{close34\_open01}, where they comprise 7.72\% of its 30,000 test points. The 0.127\% unresolved fraction across the full study therefore conceals concentrated numerical difficulty.
+
+The predetermined cross-check matched pandapower on 58 of the 59 exchange batches, with maximum voltage difference below $4\times10^{-10}$ pu among those comparisons. The remaining batch triggered the recorded reference-handling amendment. We retain that topology and its unresolved rows. Neither algorithmic nonconvergence nor exclusion from a risk denominator is interpreted as evidence of a physically infeasible operating point.
+
+Unless stated otherwise, the following error rates are macro averages over 44 held-out topologies, after averaging the nine training-seed/test-seed combinations within each topology. Unsafe rate means unsafe approvals divided by solver-resolved points. False-rejection rate means rejected feasible points divided by resolved feasible points. Escalation uses all generated points. These denominators differ. Model evaluations sharing a reference point are repeated predictions, not independent physical trials, and seed ranges describe variability rather than confidence bounds.
+
+\subsection{Current-physics routes on held-out exchanges}
+
+Table~\ref{tab:nominal} reports the frozen 10\% calibration setting. The stale neural ensemble without routing has a macro unsafe rate of 17.6519\%. Neural-margin routing lowers it to 14.8359\%, and spread routing leaves 16.2067\%, despite realized escalation near 10\%. A classifier-confidence gate, a learned error probe and spread normalization remain in the same high-error range. These results concern models whose operating features omit the changed topology.
+
+\input{generated_tables/nominal.tex}
+
+Physics-only routing is a substantially stronger reference. With absolute-margin fallback, unsafe approvals average 0.06147\% and false rejections average 0.16778\%. Realized escalation is 8.65778\%. The residual model improves these averages to 0.00647\% and 0.02476\%, respectively, at 8.39836\% escalation. The absolute reductions are 0.0550 percentage points for unsafe approvals and 0.1430 points for false rejections. Thus the learned correction adds decision value beyond the linear verifier in the nominal comparison, with a slightly smaller exact-solve fraction.
+
+The improvement is not uniform. Across training seeds, the residual model's unsafe rate ranges from 0.00562\% to 0.00743\%, compared with 0.05779\% to 0.06464\% for physics-only routing. Its worst-topology unsafe rate is 0.0900\%, versus 0.4100\%. Paired topology averages show lower unsafe rates on 22 exchanges and lower false-rejection rates on 30. Both errors are no worse on 36 of 44 exchanges. The other eight prevent a claim of dominance on every reconfiguration.
+
+PhyRoute-D reaches 0.06057\% unsafe approvals and 0.07864\% false rejections, but escalates 25.18472\%. Relative to physics-only routing, its unsafe reduction is just 0.00090 percentage points while escalation increases by 16.52694 points. Its lower false-rejection rate may matter under a specified application cost, but the result does not establish an efficient universal gate. Approval-only physics routing also illustrates the tradeoff: it lowers unsafe approvals to 0.02275\% at 8.28960\% escalation while leaving 0.75225\% false rejections. Refusing more feasible points cannot be hidden inside a single safety metric.
+
+Figure~\ref{fig:nominal} shows the topology means at the 10\% setting. The smaller and larger frozen budgets preserve the nominal ranking. At 5\%, the residual route records 0.01843\% unsafe approvals and 0.08617\% false rejections at 4.27977\% escalation. At 20\%, these become 0.000808\% and 0.001096\% at 16.60066\% escalation. Physics-only routing has larger corresponding error averages at both settings. These are observed tradeoffs over a fixed benchmark, not certified risk levels.
+
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\textwidth]{../figures/revised/nominal_tradeoff.pdf}
+\caption{Three routes with current, correct physics at the frozen 10\% calibration setting. Faint points are means for individual held-out topologies; diamonds are the 44-topology macro means. Decision errors use resolved subsets and escalation uses all generated points. Stale neural routes are omitted to preserve the error scale.}
+\label{fig:nominal}
+\end{figure}
+
+\subsection{Equal test budgets and nominal calibration}
+
+At exactly 10\% retrospective test escalation, physics-only routing has an unsafe rate of 0.01326\% and a false-rejection rate of 0.04405\%. For the residual model, these rates are 0.00139\% and 0.00105\%. PhyRoute-D leaves 11.40195\% unsafe approvals, alongside 1.98871\% false rejections. Its frozen error rate depends on substantially increased escalation. Test-score quantiles diagnose ranking capacity and cannot replace calibration thresholds in a deployment claim.
+
+Topology shift also differs from the tested operating-range shift. On the original topology, neural-margin, physics-only, residual and disagreement routes all have zero observed errors at the 10\% calibration setting. On the photovoltaic-growth test, neural-margin routing again has zero observed errors, while the residual route records 0.00556\% unsafe approvals. The residual model is therefore not uniformly superior across the two kinds of change.
+
+The split-conformal route at $\alpha=0.001$ has no observed errors on either original-topology distribution, with 3.3011\% escalation in the nominal range. On held-out topologies its unsafe rate is 16.6929\% with the same 3.3011\% escalation. The unchanged rate follows the paired topology-blind inputs. This is a failure of transport to the changed conditional response, not a contradiction of the exchangeability-based conformal statement.
+
+\subsection{The supplied verifier can also be wrong}
+
+Table~\ref{tab:mismatch} and Fig.~\ref{fig:mismatch} hold physical truth fixed while changing the verifier. For the residual route, independent branch perturbations in $[0.9,1.1]$ increase the unsafe rate from 0.00647\% to 0.01039\%, with 0.04356\% false rejections. This single recorded perturbation is milder than a coherent bias and does not estimate performance averaged over possible network errors.
+
+\input{generated_tables/mismatch.tex}
+
+A coherent factor of 0.9 raises residual-route unsafe approvals to 2.24272\%; physics-only routing reaches 3.14304\% and PhyRoute-D reaches 2.30788\%. The residual model still improves the unsafe average over physics alone in this condition, but its nominal low-error level is lost. At factor 1.1, its unsafe rate falls to 0.001244\% while false rejections rise to 5.03135\%. Physics-only routing has 0.005498\% unsafe approvals and 2.70213\% false rejections. Depending on the direction of bias, conservative-looking voltage estimates can exchange missed violations for substantial rejection of feasible points.
+
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\textwidth]{../figures/revised/impedance_sensitivity.pdf}
+\caption{Sensitivity to coherent error in supplied line impedances, with reference physics and nominal calibration thresholds fixed. Ribbons span the three training-run means, not confidence intervals. Error percentages use resolved denominators. Lower unsafe approvals under overestimated impedance must be read alongside false rejections.}
+\label{fig:mismatch}
+\end{figure}
+
+Using the stale original topology removes the useful current-network signal. Residual routing then has 14.85961\% unsafe approvals, versus 15.43925\% for physics-only routing and 15.44149\% for PhyRoute-D. The learned correction does not recover an omitted topology from operating features alone. The nominal result consequently supports a conditional benefit from supplied physical information, not immunity to verifier error.
+
+\subsection{Complete-route computation}
+
+Table~\ref{tab:latency} reports complete NumPy routes on an Apple M4 system with Python 3.11.14 and NumPy 2.4.6, with thread counts fixed to one. Timing uses training seed 4101 and test seed 9101, the original topology and the previously explored exchange \texttt{close35\_open31}. It covers varied batches of 1, 64 and 512, with two warm-ups, rotating method order and 200, 80 and 30 measured calls, respectively. These are declared resolved workloads with strict backward/forward-sweep fallback, not a measurement of Newton--Raphson retries on difficult reference cases.
+
+\input{generated_tables/latency.tex}
+
+For single-point calls on the original topology, mean time is 64.04~$\mu$s for physics-only routing, 74.45~$\mu$s for residual routing and 396.55~$\mu$s for always-exact evaluation. On the changed topology, the corresponding means are 57.81, 66.32 and 414.72~$\mu$s. The residual route's original-topology median is 29.85~$\mu$s and its p95 is 416.33~$\mu$s. Median single-point latency mostly reflects calls that skip fallback. Reporting it alone would understate workload cost and hide the fallback tail.
+
+At batch size 512, original-topology mean times per scenario are 1.339, 1.570 and 3.226~$\mu$s for physics-only, residual and always-exact routes. The changed-topology means are 1.459, 1.721 and 3.769~$\mu$s. The residual model buys lower nominal decision errors with more computation than physics-only screening, despite its smaller escalation average in the held-out study. Lower escalation and lower latency are not interchangeable. Timing two topologies also cannot establish a latency bound across the inventory or an operational service-level guarantee.
+
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Information explains the topology-blind failure}
+
+For a fixed trained predictor and routing score $g$, if the operating-feature distribution is unchanged between two topologies, the distribution of $g(X)$ is unchanged. For any measurable set $A$,
+\begin{equation}
+ P_{T_1}\{g(X)\in A\}
+ =\int\mathbf{1}\{g(x)\in A\}\,dP_X(x)
+ =P_{T_2}\{g(X)\in A\}.
+\end{equation}
+This is a direct observation about deterministic functions of the same inputs, not a new theorem. In the paired experiment, the scores agree pointwise across topologies. Labels can still differ because the voltage solution depends on the network. A stable confidence histogram therefore cannot be interpreted as evidence that the physical decision remains accurate.
+
+LinDistFlow breaks that symmetry by receiving the supplied network. The residual model receives the same physical summary and learns corrections on development exchanges. Its held-out improvement over physics-only screening shows that a learned component can add useful discrimination once current information is supplied. A disagreement gate addresses the stale model differently: it routes its conflicts with physics for resolution. In this benchmark that can be expensive because the stale model itself generates many conflicts. The direct physics and residual routes need not preserve that stale verdict.
+
+\subsection{What the comparison establishes}
+
+The residual result is an empirical systems comparison with several differences between models. It uses 48,000 training points across development topologies, whereas the stale ensemble uses 30,000 points from the original topology. Its two hidden layers have 64 units each, and it is a single network rather than five 32-unit members. Current-physics inputs, training diversity, target parameterization, capacity and ensemble overhead all change together. The experiment does not isolate their individual causal effects. A claim that residual learning alone causes the gain would require matched ablations.
+
+Under the stated training and calibration choices, the augmented route improves nominal error averages over the inexpensive verifier it uses. Runtime and mismatch results specify the price and conditions. Physics-only screening is simpler and faster in the measured routes. Where its remaining errors matter, learned correction offers a measurable alternative. No application-specific cost or acceptable-risk threshold was imposed after observing these outcomes.
+
+Several limits remain. All exchanges derive from one balanced feeder, so held-out topology is not held-out network generalization. Synthetic load and photovoltaic ranges do not represent every operating regime. The random impedance experiment contains one realization per topology, and measurement error was not tested. Reference coverage remains incomplete on one topology. The revision followed an exploratory study, even though the expanded methods and allocation were frozen before the revised comparisons. These boundaries belong to the evidence, not to a claim of field readiness.
+
+\section{Conclusion}
+
+The strongest result is the measured value of correcting current LinDistFlow information before applying a calibrated fallback rule. On 44 held-out branch exchanges, that route reduces nominal unsafe approvals and false rejections relative to physics-only screening, with slightly less escalation but higher computation. Preserving a stale neural verdict through disagreement routing is less efficient at equal test capacity. Neither approach supplies a general safety certificate: coherent impedance error, stale topology and unresolved numerical cases limit the conclusion. A credible deployment comparison must account for the information each component receives, both decision errors, the realized solver workload and the conditions its reference cannot resolve.
+
+\paragraph{Data and code.}
+The companion reproducibility package contains the protocol and amendment, topology allocation, configuration and source hashes, non-executable model arrays, reference-coverage records, evaluation summaries and plotting and timing code. The original exploratory experiment is preserved separately.
+% Public repository and archival identifiers await a verified release.
+
+% AUTHOR ACTION: Human final review and approval of this disclosure are pending.
+\paragraph{AI assistance.}
+ChatGPT assisted with initial idea development. Claude developed the original experimental code and manuscript draft. Codex assisted with code and numerical audits, protocol revision, literature verification, revised experiment tooling, drafting and typesetting. Human authors retain responsibility for validating the evidence, interpreting the findings and approving the submitted text.

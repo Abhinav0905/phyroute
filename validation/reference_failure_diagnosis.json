@@ -1,0 +1,43 @@
+{
+  "topology": "close34_open01",
+  "scenario_seed": 20260922,
+  "valid": [
+    false,
+    true,
+    true,
+    true,
+    true
+  ],
+  "info": {
+    "bfs_calls": 6,
+    "bfs_max_iterations": 100,
+    "nr_attempts": [
+      {
+        "scenario_index": 0,
+        "bfs_failure": "power flow did not converge in 100 iterations (max update 1.85 p.u.)",
+        "attempts": [
+          {
+            "initialization": "flat",
+            "accepted": false,
+            "error": "LoadflowNotConverged: Power Flow nr did not converge after 100 iterations!"
+          },
+          {
+            "initialization": "auto",
+            "accepted": false,
+            "error": "LoadflowNotConverged: Power Flow nr did not converge after 100 iterations!"
+          }
+        ]
+      }
+    ],
+    "residual_tolerance_pu": 1e-08,
+    "initial_batch_failure": "power flow did not converge in 100 iterations (max update 1.85 p.u.)",
+    "n_generated": 5,
+    "n_resolved": 4,
+    "n_unresolved": 1,
+    "n_bfs": 4,
+    "n_nr": 0,
+    "unresolved_indices": [
+      0
+    ]
+  }
+}

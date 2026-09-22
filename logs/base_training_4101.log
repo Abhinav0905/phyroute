@@ -1,0 +1,8 @@
+[train 4101] fitting tiny_0
+[train 4101] fitting tiny_1
+[train 4101] fitting tiny_2
+[train 4101] fitting tiny_3
+[train 4101] fitting tiny_4
+[train 4101] fitting classifier and error probe
+[train 4101] saved /Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/results/revised/models/train_4101.npz
+[done] train 32.2s

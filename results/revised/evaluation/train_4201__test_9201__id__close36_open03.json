@@ -1,0 +1,12 @@
+{
+  "identity": {
+    "condition": "id",
+    "kind": "evaluation",
+    "run_hash": "8cb0242b95738614d4bcb048900dc07da99e04dfb46149a77b77a0ff2bacd2fc",
+    "test_seed": 9201,
+    "topology_id": "close36_open03",
+    "training_seed": 4201
+  },
+  "rows": 549,
+  "sha256": "a13d8605f36e3704d2f28d03dad84b7e97d7abdb6c9ef252e6eafb80c1ec31bf"
+}

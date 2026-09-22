@@ -1,0 +1,6 @@
+[topology train] seed=4101 n=48000 topologies=16
+[topology trained] seed=4101 iterations=75 seconds=7.3
+[topology train] seed=4201 n=48000 topologies=16
+[topology trained] seed=4201 iterations=76 seconds=7.4
+[topology train] seed=4301 n=48000 topologies=16
+[topology trained] seed=4301 iterations=148 seconds=11.2

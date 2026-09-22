@@ -1,0 +1,25 @@
+{
+  "details": {
+    "paired_injections": "test_9301__pv_shift",
+    "solver": {
+      "bfs_calls": 1,
+      "bfs_max_iterations": 11,
+      "n_bfs": 10000,
+      "n_generated": 10000,
+      "n_nr": 0,
+      "n_resolved": 10000,
+      "n_unresolved": 0,
+      "nr_attempts": [],
+      "residual_tolerance_pu": 1e-08,
+      "unresolved_indices": []
+    }
+  },
+  "identity": {
+    "condition": "pv_shift",
+    "kind": "topology_data",
+    "run_hash": "8cb0242b95738614d4bcb048900dc07da99e04dfb46149a77b77a0ff2bacd2fc",
+    "seed": 9301,
+    "topology_id": "base"
+  },
+  "sha256": "cdb5b1b81152d05d8e18d01bbdfd7dbc5630868b41d72cade22cd7624e10f7a4"
+}

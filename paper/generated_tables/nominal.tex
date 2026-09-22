@@ -1,0 +1,23 @@
+\begin{table}[tb]
+\caption{Nominal current verifier, frozen 10\% calibration thresholds. Values are topology-macro percentages on 44 held-out exchanges, averaged over three training and three test seeds. Escalation uses all generated draws; unsafe approvals use resolved draws and false rejections use resolved feasible draws.}
+\label{tab:nominal}
+\centering\small
+\begin{tabular}{lrrr}
+\toprule
+Route & Escalation & Unsafe & False rejection \\
+\midrule
+Neural margin & 10.22 & 14.836 & 2.684 \\
+Ensemble spread & 9.67 & 16.207 & 3.617 \\
+Spread-normalized margin & 10.18 & 14.950 & 2.468 \\
+Classifier confidence & 10.24 & 15.126 & 1.624 \\
+Learned error ratio & 10.12 & 14.850 & 2.477 \\
+PhyRoute-D & 25.18 & 0.061 & 0.079 \\
+Minimum margin & 12.86 & 13.409 & 1.849 \\
+Neural approval-only & 24.29 & 0.019 & 4.489 \\
+Physics only & 8.66 & 0.061 & 0.168 \\
+Physics approval-only & 8.29 & 0.023 & 0.752 \\
+Joint approval & 8.66 & 0.060 & 2.825 \\
+Residual MLP & 8.40 & 0.006 & 0.025 \\
+\bottomrule
+\end{tabular}
+\end{table}

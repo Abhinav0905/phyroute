@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phyroute"
+version = "0.2.0"
+description = "Reproducible evaluation of physics-only and learned power-flow screening under feeder reconfiguration and verifier mismatch."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Kumar Abhinav"}]
+keywords = ["adaptive inference", "model cascades", "power flow", "surrogate models", "cyber-physical systems", "distribution grid", "safety"]
+dependencies = [
+  "numpy>=1.26", "scipy>=1.11", "pandas>=2.0", "pandapower>=2.14",
+  "scikit-learn>=1.3", "matplotlib>=3.7", "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+include = ["phyroute*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

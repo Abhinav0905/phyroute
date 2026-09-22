@@ -1,0 +1,16 @@
+\begin{table}[tb]
+\caption{Measured complete-route mean latency in $\mu$s per scenario on an Apple M4 with one BLAS thread. Base is the original network; RC-A is the previously studied close35/open31 exchange. Batch size is shown in each column. Training seed 4101, test seed 9101; frozen 10\% calibration thresholds.}
+\label{tab:latency}
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule
+Route & Base, 1 & RC-A, 1 & Base, 512 & RC-A, 512 \\
+\midrule
+Always exact & 396.55 & 414.72 & 3.23 & 3.77 \\
+Physics only & 64.04 & 57.81 & 1.34 & 1.46 \\
+Neural margin & 91.88 & 93.00 & 1.98 & 2.13 \\
+PhyRoute-D & 107.77 & 130.25 & 2.10 & 2.56 \\
+Residual MLP & 74.45 & 66.32 & 1.57 & 1.72 \\
+\bottomrule
+\end{tabular}
+\end{table}

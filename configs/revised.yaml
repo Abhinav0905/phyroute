@@ -1,0 +1,24 @@
+protocol_version: 2
+training_seeds: [4101, 4201, 4301]
+test_seeds: [9101, 9201, 9301]
+n_train: 30000
+n_probe: 10000
+n_calibration: 10000
+n_test: 10000
+tiny_hidden: [32, 32]
+n_tiny: 5
+tiny_max_iter: 250
+probe_max_iter: 250
+calibration_budgets: [0.05, 0.10, 0.20]
+matched_budgets: [0.05, 0.10, 0.20, 0.30]
+conformal_alpha: [0.001, 0.01, 0.05]
+impedance_scales: [0.8, 0.9, 0.95, 1.05, 1.1, 1.2]
+perturbation_seed: 77001
+topology_inventory: protocol/topologies.json
+topology_model:
+  hidden: [64, 64]
+  max_iter: 250
+  scenarios_per_development_topology: 3000
+  include_original_topology: true
+  target: residual_of_exact_voltage_extrema_minus_lindistflow_extrema
+  features: original_71_features_plus_current_lindistflow_voltage_extrema

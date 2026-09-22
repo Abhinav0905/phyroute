@@ -1,0 +1,72 @@
+{
+  "evaluation_files": 549,
+  "rows": 301401,
+  "paired_topology_comparisons": [
+    {
+      "method": "phy_d",
+      "reference": "physics_only_abs_margin",
+      "mean_delta": {
+        "unsafe_rate": -9.035525547581315e-06,
+        "false_alarm_rate": -0.0008914187874567031,
+        "realized_escalation": 0.16526944444444444,
+        "conditional_risk": -0.00010074762992828778,
+        "miss_rate": -1.1118931226142431e-05
+      },
+      "topologies_lower_unsafe": 3,
+      "topologies_lower_false_alarm": 25,
+      "topologies_no_worse_both_errors": 38,
+      "n_topologies": 44
+    },
+    {
+      "method": "physics_residual_margin",
+      "reference": "physics_only_abs_margin",
+      "mean_delta": {
+        "unsafe_rate": -0.0005499781580123053,
+        "false_alarm_rate": -0.0014302452502224607,
+        "realized_escalation": -0.0025941919191919197,
+        "conditional_risk": -0.0026715925525217076,
+        "miss_rate": -0.0007247139627309606
+      },
+      "topologies_lower_unsafe": 22,
+      "topologies_lower_false_alarm": 30,
+      "topologies_no_worse_both_errors": 36,
+      "n_topologies": 44
+    },
+    {
+      "method": "nn_margin",
+      "reference": "physics_only_abs_margin",
+      "mean_delta": {
+        "unsafe_rate": 0.14774407818923949,
+        "false_alarm_rate": 0.025161372324063035,
+        "realized_escalation": 0.01564444444444445,
+        "conditional_risk": 0.23645374093900628,
+        "miss_rate": 0.2203397773329985
+      },
+      "topologies_lower_unsafe": 0,
+      "topologies_lower_false_alarm": 7,
+      "topologies_no_worse_both_errors": 0,
+      "n_topologies": 44
+    }
+  ],
+  "reference_coverage": {
+    "generated": 1830000,
+    "resolved": 1827685,
+    "unresolved": 2315,
+    "topologies_with_unresolved": [
+      "close34_open01"
+    ]
+  }
+}
+                    policy  unsafe_rate  false_alarm_rate  realized_escalation  conditional_risk  miss_rate
+           classifier_conf     0.151259          0.016237             0.102356          0.238291   0.223146
+          conservative_and     0.000604          0.028246             0.086578          0.002971   0.000806
+               error_ratio     0.148505          0.024767             0.101211          0.238826   0.220774
+nn_approval_signed_physics     0.000189          0.044887             0.242885          0.000939   0.000245
+                 nn_margin     0.148359          0.026839             0.102222          0.239381   0.221159
+                 nn_spread     0.162067          0.036173             0.096700          0.255194   0.248993
+                     phy_d     0.000606          0.000786             0.251847          0.002827   0.000808
+                   phy_min     0.134087          0.018491             0.128564          0.222151   0.194008
+     physics_approval_only     0.000227          0.007522             0.082896          0.001141   0.000293
+   physics_only_abs_margin     0.000615          0.001678             0.086578          0.002927   0.000819
+   physics_residual_margin     0.000065          0.000248             0.083984          0.000256   0.000094
+               spread_norm     0.149501          0.024679             0.101756          0.239850   0.222659

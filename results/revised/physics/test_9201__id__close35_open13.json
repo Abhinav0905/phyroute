@@ -1,0 +1,25 @@
+{
+  "details": {
+    "paired_injections": "test_9201__id",
+    "solver": {
+      "bfs_calls": 1,
+      "bfs_max_iterations": 10,
+      "n_bfs": 10000,
+      "n_generated": 10000,
+      "n_nr": 0,
+      "n_resolved": 10000,
+      "n_unresolved": 0,
+      "nr_attempts": [],
+      "residual_tolerance_pu": 1e-08,
+      "unresolved_indices": []
+    }
+  },
+  "identity": {
+    "condition": "id",
+    "kind": "topology_data",
+    "run_hash": "8cb0242b95738614d4bcb048900dc07da99e04dfb46149a77b77a0ff2bacd2fc",
+    "seed": 9201,
+    "topology_id": "close35_open13"
+  },
+  "sha256": "ecdc37278d27bb9e11d3e06b9e9f901b336e7f9e91282ef543f9b25a5fc218a1"
+}

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software or its numerical outputs, cite this v0.2.0 release. The companion manuscript remains an author-review draft."
+title: "PhyRoute: Voltage Screening under Feeder Reconfiguration"
+type: software
+version: 0.2.0
+date-released: '2026-09-22'
+repository-code: "https://github.com/Abhinav0905/phyroute"
+license: Apache-2.0
+authors:
+  - family-names: Abhinav
+    given-names: Kumar
+abstract: >
+  Code and numerical outputs for comparing neural, physics-only and hybrid
+  voltage screening on a balanced IEEE 33-bus feeder. The revised experiment
+  evaluates 59 radial branch exchanges, with 15 development and 44 held-out
+  exchanges, three training/calibration runs, three test draws and nine verifier
+  variants. It generates 1,830,000 topology-scenario cases and retains explicit
+  masks for 2,315 numerically unresolved references. Results quantify unsafe
+  approvals, false rejections and exact-solver calls. The physics-augmented
+  residual model uses additional development-topology training labels, so its
+  comparison does not isolate architecture or physics-feature effects.
+  Includes frozen protocol records, non-pickle model arrays, independent
+  calibration, numerical audits and SVProc LaTeX manuscript sources. The
+  companion manuscript is an author-review draft and has not been submitted
+  to the conference; affiliation and contact details remain unconfirmed.
+keywords:
+  - voltage screening
+  - power flow
+  - feeder reconfiguration
+  - verifier mismatch
+  - surrogate models
+  - adaptive inference
+  - reproducible research

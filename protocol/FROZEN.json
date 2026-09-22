@@ -1,0 +1,9 @@
+{
+  "frozen_utc": "2026-09-22T19:54:04.279824+00:00",
+  "status": "Frozen after exploratory original audit, before revised comparisons",
+  "files": {
+    "protocol/PROTOCOL.md": "83cf1b260c52c6743b74a44e9cd037b032e766040ae42ab0132629a0f2277983",
+    "protocol/topologies.json": "43ad5b91c434b6e181c43ab14454cba31e25ba65a06f22685d7e86b52b9892c6",
+    "configs/revised.yaml": "832164c856a00aa22f2e289c1c3c51358e2c47789a4f520b6113088050b4e9cc"
+  }
+}

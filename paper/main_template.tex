@@ -1,0 +1,23 @@
+% Conference-supplied Springer SVProc layout; content files supplied separately.
+% Keep the class's typography and text block. A4 and no running heads follow
+% the ICDLAI homepage. Conflicting online 12pt/author-date rules remain unresolved.
+\documentclass[a4paper,norunningheads]{svproc}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\def\UrlFont{\rmfamily}
+\pagestyle{empty}
+\setlength{\tabcolsep}{6pt}
+% Do not add geometry/font-size overrides to make the page count fit.
+\input{metadata.tex}
+\begin{document}
+\mainmatter
+\maketitle
+\thispagestyle{empty}
+\input{manuscript_body.tex}
+\bibliographystyle{spmpsci}
+\bibliography{references}
+\end{document}

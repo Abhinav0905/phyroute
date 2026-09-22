@@ -1,0 +1,20 @@
+[train 4301] validated cached checkpoint
+[evaluate 4301/9101] id/base: 549 rows
+Traceback (most recent call last):
+  File "/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/scripts/run_revised.py", line 59, in <module>
+    main()
+  File "/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/scripts/run_revised.py", line 46, in main
+    experiment.evaluate(args.train_seed, args.test_seed, args.partition, args.topology)
+  File "/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/phyroute/revised.py", line 423, in evaluate
+    d = self.topology_data(test_seed, top, condition)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/phyroute/revised.py", line 354, in topology_data
+    injections = self.test_data(seed, condition)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/phyroute/revised.py", line 346, in test_data
+    save_arrays(path, d, identity)
+  File "/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/phyroute/revised.py", line 85, in save_arrays
+    temp.replace(path)
+  File "/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py", line 1188, in replace
+    os.replace(self, target)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/results/revised/data/test_9101__pv_shift.npz.tmp' -> '/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/results/revised/data/test_9101__pv_shift.npz'

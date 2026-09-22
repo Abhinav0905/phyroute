@@ -1,0 +1,2993 @@
+{
+  "checked_utc": "2026-09-22T19:57:31.392623+00:00",
+  "preset": {
+    "scenario_seed": 20260922,
+    "scenarios_per_topology": 5,
+    "scenario_generator": "ID",
+    "paired_injections_across_topologies": true,
+    "tolerance_pu": 1e-08
+  },
+  "provenance": {
+    "python": "3.11.14",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.4.6",
+    "pandapower": "3.5.5",
+    "topology_inventory_sha256": "43ad5b91c434b6e181c43ab14454cba31e25ba65a06f22685d7e86b52b9892c6",
+    "solver_sha256": "66dbd03fd3257dad9857d84744866425b0bb921ff369a518b02ba365c7746a4d",
+    "scenario_array_sha256": "ecfe06919071244e751f6298ed833fcdab2f430e6264349bad2c4d2bd3fd24c6"
+  },
+  "n_topologies": 59,
+  "n_reference_scenarios": 295,
+  "maximum_absolute_error_pu": 3.9408099006266184e-10,
+  "passed": false,
+  "results": [
+    {
+      "id": "close32_open01",
+      "open_line": 1,
+      "close_line": 32,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.2826928408316007e-10,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.5491609651217004e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.1102230246251565e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 3.377298440909726e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 6.191269719124648e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 17,
+        "max_voltage_update": 3.151115054487168e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close32_open02",
+      "open_line": 2,
+      "close_line": 32,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.054240028608433e-10,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 1.060374010819487e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 5.88418203051333e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 7.283063041541027e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 5.890843368661081e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 12,
+        "max_voltage_update": 5.300318090045329e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close32_open03",
+      "open_line": 3,
+      "close_line": 32,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 4.739275638598883e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 4.1522341120980855e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 5.10702591327572e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 3.852473895449293e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.4802382370125997e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 12,
+        "max_voltage_update": 2.5650480530772147e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close32_open04",
+      "open_line": 4,
+      "close_line": 32,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 3.533329184790546e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.042011087472929e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 2.886579864025407e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 3.2862601528904634e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 1.6631140908884845e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 12,
+        "max_voltage_update": 1.9645403966444155e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close32_open05",
+      "open_line": 5,
+      "close_line": 32,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 8.206768598029157e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 5.832001548355947e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 2.7113866707395573e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 7.30304705598428e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.9806934698228815e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 1.3946524397328088e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close32_open06",
+      "open_line": 6,
+      "close_line": 32,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.0513923065502695e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 8.230083281546285e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 3.521738456413459e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 1.2846279595635224e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.7988722450800196e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 1.7356252194925124e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close32_open17",
+      "open_line": 17,
+      "close_line": 32,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.0081824264318584e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.6848302187308946e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.6019408022316384e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 7.671641100159832e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 3.993472219576688e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 1.1876658973923858e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close32_open18",
+      "open_line": 18,
+      "close_line": 32,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 8.248624006057526e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 2.964295475749168e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.2869594279152352e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 4.8183679268731794e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.644551244657123e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 9.937998251229991e-11,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close32_open19",
+      "open_line": 19,
+      "close_line": 32,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 6.030176358251538e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 2.2137847111025621e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.135136429297745e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 3.752553823233029e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.0239365738916604e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 7.527283614886743e-11,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close33_open08",
+      "open_line": 8,
+      "close_line": 33,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 6.527234308606467e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.204325693673127e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.090694201622e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 6.049605261182478e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.861599845971341e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 8.540794763825724e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close33_open09",
+      "open_line": 9,
+      "close_line": 33,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 6.152178766427596e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.1377123121956174e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.0664025218432016e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 5.541123115904156e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.5222046673434306e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 8.12051354183635e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close33_open10",
+      "open_line": 10,
+      "close_line": 33,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 5.903555422293039e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.06721315013192e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.0477729794899915e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 5.168088179630104e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.3496760093166813e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 7.83922151054231e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close33_open11",
+      "open_line": 11,
+      "close_line": 33,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 5.7438387379704636e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.087863298389948e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.0344614054247359e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 5.022648963404208e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.2428725543477412e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 7.657581324260174e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close33_open12",
+      "open_line": 12,
+      "close_line": 33,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 5.7642668416235665e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 2.9792834865816076e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.0352829704629585e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 5.051514762044462e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.2284396550276142e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 7.68128720176748e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close33_open13",
+      "open_line": 13,
+      "close_line": 33,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 5.665645730346114e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 2.996825010370685e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.0395795335682578e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 5.108136136300345e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.1967982988257972e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 7.568673859677306e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close34_open01",
+      "open_line": 1,
+      "close_line": 34,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "bfs_error": "PowerFlowConvergenceError: power flow did not converge in 100 iterations (max update 1.85 p.u.)",
+          "error": "LoadflowNotConverged: Power Flow nr did not converge after 10 iterations!",
+          "passed": false
+        },
+        {
+          "scenario_index": 1,
+          "individual_solver_diagnostics": {
+            "converged": true,
+            "iterations": 19,
+            "max_voltage_update": 3.831374877787291e-10,
+            "tol": 1e-09
+          },
+          "max_absolute_error_pu": 1.9313883825589073e-10,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "individual_solver_diagnostics": {
+            "converged": true,
+            "iterations": 13,
+            "max_voltage_update": 4.0630777201278097e-10,
+            "tol": 1e-09
+          },
+          "max_absolute_error_pu": 8.18780598876856e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "individual_solver_diagnostics": {
+            "converged": true,
+            "iterations": 16,
+            "max_voltage_update": 5.430204085568603e-10,
+            "tol": 1e-09
+          },
+          "max_absolute_error_pu": 2.088884620832232e-10,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "individual_solver_diagnostics": {
+            "converged": true,
+            "iterations": 21,
+            "max_voltage_update": 4.15964369045227e-10,
+            "tol": 1e-09
+          },
+          "max_absolute_error_pu": 2.5241486678595493e-10,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": false,
+      "batch_error": "PowerFlowConvergenceError: power flow did not converge in 100 iterations (max update 1.85 p.u.)"
+    },
+    {
+      "id": "close34_open02",
+      "open_line": 2,
+      "close_line": 34,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.418302142397465e-10,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 6.576172939531943e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.354472090042691e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 1.078470646120877e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 8.877121260297827e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 18,
+        "max_voltage_update": 3.157882554866674e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close34_open03",
+      "open_line": 3,
+      "close_line": 34,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 2.847646562997852e-10,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 1.5080714454995814e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.5543122344752192e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 3.7259084706420253e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.262856568790994e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 16,
+        "max_voltage_update": 7.319530273949566e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close34_open04",
+      "open_line": 4,
+      "close_line": 34,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.5700474254032315e-10,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 8.148037800026486e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.2434497875801753e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 2.0272672429655358e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 1.2198020371556595e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 16,
+        "max_voltage_update": 4.2468548988026217e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close34_open05",
+      "open_line": 5,
+      "close_line": 34,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.1072809336098999e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 6.938893903907228e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 2.7221558340784213e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 1.8517742894630373e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 4.041622592154681e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 1.7410013287563e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close34_open06",
+      "open_line": 6,
+      "close_line": 34,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.0565104346937915e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 8.251177519014163e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 3.524958103184872e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 1.2840062346697323e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.857714065385153e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 1.742135962093622e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close34_open07",
+      "open_line": 7,
+      "close_line": 34,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.619482326020716e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 1.3733458814613186e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 4.824696198113543e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 1.7962964449225183e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 4.214406601477094e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 2.529750979221432e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close34_open08",
+      "open_line": 8,
+      "close_line": 34,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.7841284005726266e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 1.5352163984516665e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 5.347500220409529e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 2.0041857062835788e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 4.82502926502093e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 2.75185772677338e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close34_open09",
+      "open_line": 9,
+      "close_line": 34,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.9825474595336345e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 1.691424778016426e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 5.892508703198018e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 2.2736368343601043e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 5.648814749292796e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 3.0153349359665945e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close34_open10",
+      "open_line": 10,
+      "close_line": 34,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 2.2012169864638054e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 2.029487689014786e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 6.469602631398175e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 2.5768498446154808e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 6.561418075534675e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 3.3044711284700345e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close34_open17",
+      "open_line": 17,
+      "close_line": 34,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.539568472708197e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 4.709566070459914e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.8152812586436085e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 1.8052226380405045e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 1.0171863351615684e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 1.7143409750991665e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close34_open18",
+      "open_line": 18,
+      "close_line": 34,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.083677592106369e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.419486915845482e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.356592616019725e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 7.016609515630989e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 4.4841907964610073e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 1.2602264192906718e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close34_open19",
+      "open_line": 19,
+      "close_line": 34,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 6.674660824046441e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 2.361444373377708e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.1588729975642309e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 4.0190073491430667e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.581268532253489e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 8.225642736053442e-11,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close34_open20",
+      "open_line": 20,
+      "close_line": 34,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 6.809441899235935e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.1125102495366264e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 9.825806834840023e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 4.980460488468452e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.8225199955045355e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 8.883463659714863e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open05",
+      "open_line": 5,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 3.5489833294377604e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 2.9698465908722937e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.709743457922741e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 7.682743330406083e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 3.9412917374193057e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 13,
+        "max_voltage_update": 1.873261720481599e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open06",
+      "open_line": 6,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 9.903700082247724e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 6.847855615887966e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 4.107825191113079e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 8.171241461241152e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.332800619342379e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 11,
+        "max_voltage_update": 5.85500942475011e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open07",
+      "open_line": 7,
+      "close_line": 35,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 2.680256017129068e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 2.1094237467877974e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 2.6645352591003757e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 9.137135492665038e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 1.1550760348200129e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 10,
+        "max_voltage_update": 2.234073297003042e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open08",
+      "open_line": 8,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.4890977340087375e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 1.4199752484955752e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.7763568394002505e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 5.46229728115577e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 5.263567359747867e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 10,
+        "max_voltage_update": 1.322882461664322e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open09",
+      "open_line": 9,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 8.856049227290441e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 1.680433570072637e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 2.731148640577885e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 4.2532644073389747e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 3.3545388689049105e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 8.282164733690174e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open10",
+      "open_line": 10,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 5.572264871744892e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 1.0402789740737717e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.4876988529977098e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 2.320366121466577e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 1.861288900784075e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 5.484942030577466e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open11",
+      "open_line": 11,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 3.661293490608841e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 8.215650382226158e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 3.0556668306758183e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 1.0313971898767704e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 1.078470646120877e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 3.774539059152011e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open12",
+      "open_line": 12,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 3.679767601738604e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 7.153166947659884e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 3.221933830843682e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 1.3278267374516872e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 9.950928969715278e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 3.7889121538821975e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open13",
+      "open_line": 13,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 9.81992265280951e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.155253835984695e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.4477863352624354e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 3.9190872769268026e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.8543833963112775e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 1.165867443167659e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open14",
+      "open_line": 14,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 7.825851078280266e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.0830893393840597e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.2222556300400811e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 3.0531133177191805e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.0050627824730327e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 9.52231864791544e-11,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open15",
+      "open_line": 15,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 5.9048321787713576e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.099742684753437e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.0595524457812644e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 2.7644553313166398e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 1.532107773982716e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 7.419377975340111e-11,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open16",
+      "open_line": 16,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 6.811062824851888e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 4.641509399050392e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 9.317435711864164e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 6.401545959988653e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.7549074133048634e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 8.979494895747527e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open24",
+      "open_line": 24,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 3.9408099006266184e-10,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 2.6468827130088357e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 3.4416913763379853e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 9.225953334635051e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 1.525446435834965e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 16,
+        "max_voltage_update": 9.942499226138438e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open25",
+      "open_line": 25,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.4708390061457521e-10,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 1.2230216839270724e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 2.9976021664879227e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 3.197442310920451e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 8.688605390716475e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 16,
+        "max_voltage_update": 4.0489988722297394e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open26",
+      "open_line": 26,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.7365398008450939e-10,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.5216274341109965e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 9.325873406851315e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 2.1760371282653068e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 3.3650859876388495e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 15,
+        "max_voltage_update": 5.231231340225744e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open27",
+      "open_line": 27,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 8.882405921895042e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 1.7563728249569976e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 8.215650382226158e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 1.4765966227514582e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 1.7341683644644945e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 15,
+        "max_voltage_update": 2.8386925160696144e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open28",
+      "open_line": 28,
+      "close_line": 35,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 7.547684699460433e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 9.50794998288984e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 2.55351295663786e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 6.661338147750939e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 5.972999872483342e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 13,
+        "max_voltage_update": 6.136759813838182e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open29",
+      "open_line": 29,
+      "close_line": 35,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 4.2878922634770333e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 2.8377300509419e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 2.2080559602954963e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 1.0902390101819037e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 3.4970915052667806e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 4.388698135532504e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open30",
+      "open_line": 30,
+      "close_line": 35,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 7.294276294089741e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.1585845050585704e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 8.073985924283988e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 3.352873534367973e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 4.078959392472825e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 9.042801157584093e-11,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close35_open31",
+      "open_line": 31,
+      "close_line": 35,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 7.475586816241275e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 9.736877970567548e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.2592260567600988e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 9.54458734270247e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 2.581490576858414e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 9.525868735218303e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close36_open02",
+      "open_line": 2,
+      "close_line": 36,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 4.098943406916078e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.312905505481467e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 3.4416913763379853e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 8.815170815523743e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 1.318722908649761e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 11,
+        "max_voltage_update": 2.632364385729802e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close36_open03",
+      "open_line": 3,
+      "close_line": 36,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.3874301707517134e-10,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 1.1978196212680814e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.5432100042289676e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 4.944933351680447e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 5.671574321297612e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 10,
+        "max_voltage_update": 9.691399588907676e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close36_open04",
+      "open_line": 4,
+      "close_line": 36,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.0332634747811653e-10,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 7.757128273055969e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 3.9968028886505635e-15,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 3.318456620604593e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 3.817723914778526e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 10,
+        "max_voltage_update": 7.453461558078448e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close36_open21",
+      "open_line": 21,
+      "close_line": 36,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 5.3829607438160565e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 4.4841907964610073e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 2.3425705819590803e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 1.4355183708403274e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 1.8852697181159783e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 10,
+        "max_voltage_update": 4.0771606679209606e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close36_open22",
+      "open_line": 22,
+      "close_line": 36,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 3.526234859663191e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 2.575717417130363e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 1.1879386363489175e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 6.217248937900877e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 1.0107470416187425e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 10,
+        "max_voltage_update": 2.800462856154991e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close36_open23",
+      "open_line": 23,
+      "close_line": 36,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 3.313693763828951e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 5.381251000358134e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 2.5757174171303632e-14,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 1.3000711618360583e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 8.701928067011977e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 9,
+        "max_voltage_update": 3.4040452128599087e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close36_open24",
+      "open_line": 24,
+      "close_line": 36,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.359368173581288e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 4.74953409934642e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 4.223621452581483e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 1.2321921261104762e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 6.300515664747763e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 2.1348344389207988e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close36_open25",
+      "open_line": 25,
+      "close_line": 36,
+      "partition": "heldout",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 1.090294521333135e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 3.6848302187308946e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 3.4225955403144326e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 9.71267510863072e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 5.300204719560497e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 1.762541185178743e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close36_open26",
+      "open_line": 26,
+      "close_line": 36,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 8.34943225669349e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 2.736699755701011e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 2.78432832345743e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 8.272160734179579e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 4.065636716177323e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 1.3976002031840816e-10,
+        "tol": 1e-09
+      }
+    },
+    {
+      "id": "close36_open27",
+      "open_line": 27,
+      "close_line": 36,
+      "partition": "development",
+      "scenarios": [
+        {
+          "scenario_index": 0,
+          "max_absolute_error_pu": 7.181588657090288e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 1,
+          "max_absolute_error_pu": 1.7856272016558705e-11,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 2,
+          "max_absolute_error_pu": 2.3209212329788897e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 3,
+          "max_absolute_error_pu": 6.526224005654058e-12,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        },
+        {
+          "scenario_index": 4,
+          "max_absolute_error_pu": 3.346212196220222e-13,
+          "pandapower_converged": true,
+          "all_finite": true,
+          "passed": true
+        }
+      ],
+      "passed": true,
+      "batch_solver_diagnostics": {
+        "converged": true,
+        "iterations": 8,
+        "max_voltage_update": 1.226213949418748e-10,
+        "tol": 1e-09
+      }
+    }
+  ]
+}

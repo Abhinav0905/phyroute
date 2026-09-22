@@ -1,0 +1,13 @@
+{
+  "title": "PhyRoute: Voltage Screening under Feeder Reconfiguration",
+  "upload_type": "software",
+  "description": "Software release v0.2.0 containing code, model arrays, numerical comparisons and manuscript sources for neural, physics-only and hybrid voltage screening on a balanced IEEE 33-bus feeder. The experiment covers 59 radial branch exchanges (15 development, 44 held out), three training/calibration runs, three test draws and nine verifier variants. It generates 1,830,000 topology-scenario cases, resolves 1,827,685 and retains explicit masks and diagnostics for 2,315 unresolved references. Newton-Raphson recovers 135 cases after the strict sweep fails. Results report unsafe approvals, false rejections and solver calls with their stated denominators. The residual model uses additional development-topology labels, which limits causal comparisons with the stale ensemble. The package includes a frozen protocol with amendments, non-pickle checkpoints, 549 evaluation CSVs, independent audits and official SVProc LaTeX manuscript sources. The companion manuscript remains an author-review draft and has not been submitted to the conference; author affiliation and contact details still require confirmation. Software release and archival deposit do not establish peer review or acceptance.",
+  "creators": [
+    {"name": "Abhinav, Kumar"}
+  ],
+  "license": "Apache-2.0",
+  "keywords": ["voltage screening", "power flow", "feeder reconfiguration", "verifier mismatch", "surrogate models", "adaptive inference", "reproducible research"],
+  "access_right": "open",
+  "version": "0.2.0",
+  "language": "eng"
+}

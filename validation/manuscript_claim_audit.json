@@ -1,0 +1,27 @@
+{
+  "status": "No numerical or scientific blockers found in reviewed prose",
+  "files_sha256": {
+    "paper/manuscript_body.tex": "1e594f82c13bcf5368a955201e93b3d0c39de6616900fff7c40e5bfb27aee00f",
+    "paper/introduction_related.tex": "d0b020096dea997406d437ebf8cb163702cf618b323a2f57623eb9346fef212c",
+    "paper/methods_draft.tex": "bb237e96208da3df54c82fbbdd440c2ac6378642912480091425bf007c1af593"
+  },
+  "checked_claims": [
+    "Denominators and topology macro averaging",
+    "Frozen calibration versus retrospective budgets",
+    "Unequal comparator information and training allocations",
+    "Original-topology and PV zero-error statements",
+    "Seed ranges, worst-topology rates and paired topology counts",
+    "Impedance mismatch and stale-topology outcomes",
+    "Crosscheck and unresolved-reference interpretation",
+    "Latency values and exclusion of NR retry costs",
+    "Deterministic equal-input score observation without novelty claim",
+    "Explicit twelve-route provisional-verdict and score table",
+    "Residual formula and standardized residual targets",
+    "Error-probe log target, features and epsilon",
+    "Optimizer and early-stopping settings",
+    "Nominal figure caption and body correctly identify frozen 10 percent calibration only",
+    "Residual-extrema definition retains its meaning after typesetting change"
+  ],
+  "independent_integrity_passed": true,
+  "integrity_checks": 768
+}

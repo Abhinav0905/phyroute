@@ -1,0 +1,20 @@
+Title:           PhyRoute: Voltage Screening under Feeder Reconfiguration
+Subject:         Author-review manuscript for ICDLAI-2026
+Author:          Kumar Abhinav
+Creator:         LaTeX with hyperref
+Producer:        xdvipdfmx (0.1)
+CreationDate:    Mon Sep 21 17:00:00 2026 PDT
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           13
+Encrypted:       no
+Page size:       595.28 x 841.89 pts (A4)
+Page rot:        0
+File size:       147615 bytes
+Optimized:       no
+PDF version:     1.5

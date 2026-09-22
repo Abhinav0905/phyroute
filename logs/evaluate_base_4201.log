@@ -1,0 +1,4 @@
+[train 4201] validated cached checkpoint
+[evaluate 4201/9101] id/base: 549 rows
+[evaluate 4201/9101] pv_shift/base: 549 rows
+[done] evaluate 2.2s

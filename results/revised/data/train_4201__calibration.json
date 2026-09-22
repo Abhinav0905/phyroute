@@ -1,0 +1,15 @@
+{
+  "details": {
+    "seed_sequence_entropy": [
+      4201,
+      2
+    ]
+  },
+  "identity": {
+    "kind": "training_data",
+    "run_hash": "8cb0242b95738614d4bcb048900dc07da99e04dfb46149a77b77a0ff2bacd2fc",
+    "seed": 4201,
+    "split": "calibration"
+  },
+  "sha256": "dfca4d3cd2eb61f61e51c4d8e0d6f4c4d0b1502dab37377fa7bd8eaea28f9ec3"
+}

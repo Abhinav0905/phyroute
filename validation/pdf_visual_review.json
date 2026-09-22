@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "reviewed_at_utc": "2026-09-22T20:24:30.456953+00:00",
+  "reviewer": "Codex visual page review",
+  "pdf": "output/pdf/PhyRoute_Revised_ICDLAI2026.pdf",
+  "pdf_sha256": "f3b2d434a969a658df58ea613f30e43c2f42509e7c6f9e708e606ccba254f24d",
+  "pages": 13,
+  "render_dpi": 150,
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "checks": [
+    "All final pages visually inspected",
+    "No text, equation, table or figure clipping",
+    "No overlapping columns or unreadable labels",
+    "No unresolved citations or missing glyphs",
+    "Figure 1 caption matches frozen 10 percent plot",
+    "Small nonzero table entries are not printed as zero",
+    "Official SVProc A4 layout; no running heads or page numbers"
+  ],
+  "remaining_author_inputs": [
+    "Affiliation and correspondence email",
+    "Final human review and venue content-policy compliance"
+  ],
+  "source_sha256": {
+    "paper/main_template.tex": "6975775eaf8f547b82f9fb892382ca3524bd2a8aa61e5093695220d62b7df5b5",
+    "paper/metadata.tex": "54d550893635a3a42df4ec75f5a3d3ecb11e1badfb90c56a72a0896d5e5bc23c",
+    "paper/manuscript_body.tex": "1e594f82c13bcf5368a955201e93b3d0c39de6616900fff7c40e5bfb27aee00f",
+    "paper/methods_draft.tex": "bb237e96208da3df54c82fbbdd440c2ac6378642912480091425bf007c1af593",
+    "paper/introduction_related.tex": "d0b020096dea997406d437ebf8cb163702cf618b323a2f57623eb9346fef212c",
+    "paper/references.bib": "7b693af9d7ad200683227907392e0339837ba339887046731ca9dce547d11d93"
+  },
+  "page_png_sha256": {
+    "page-01.png": "c618537c0e1c31f9472d060dd631c02eedac3d26161c261e20905330dee1c939",
+    "page-02.png": "5e5515bae2e945a710f458763085df11e4928050614e92144211e92f23938a1a",
+    "page-03.png": "9169009c51718c2ffbd7107bb3338faf31c60ea080a3a2b4cd5f52350eef8a43",
+    "page-04.png": "b95f52d30fb80d1327f49b86d5a02d6ec293d282d234fecdff0e6bde27b951cb",
+    "page-05.png": "5a4ce03be06f2740261e52fc83f09ac10bd20e40bdd13ab8482b88534ee51a48",
+    "page-06.png": "4ee4d5b8e2c934916d948112271cdea8925af36536c743bd5c20947e9c3dc0fc",
+    "page-07.png": "5e70422ec4d9b3092bd249254035f0d7731317a2947d2f90bf541cb09046aabb",
+    "page-08.png": "bcb1b400f95cf832536866280e638e485bf500c41c898a6fa83bf26e8f7a9c9c",
+    "page-09.png": "aa8c787c4549358b33f975edcf8c5f6cc317de50d09ff0c4b460917c64c8239b",
+    "page-10.png": "4c1412ffc2bb7ccd02f6838712d53731bda8151fe66a899b13eb449e1d74b7e0",
+    "page-11.png": "eac0338782b5e8837e461c41c95b66dd024e4bf6ba0117b5869f7a8391a417a9",
+    "page-12.png": "bf5586925a80aedcd01d9f4760a2b17e10b0c704fce850c6d7f9a50f7e8d32e1",
+    "page-13.png": "309552af16e4c91eecc3d8b6bf22933de362548a9ec8fd9ce18fac80ef9cbd5e"
+  }
+}

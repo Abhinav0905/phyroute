@@ -1,0 +1,467 @@
+{
+  "config": {
+    "calibration_budgets": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "conformal_alpha": [
+      0.001,
+      0.01,
+      0.05
+    ],
+    "impedance_scales": [
+      0.8,
+      0.9,
+      0.95,
+      1.05,
+      1.1,
+      1.2
+    ],
+    "matched_budgets": [
+      0.05,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "n_calibration": 10000,
+    "n_probe": 10000,
+    "n_test": 10000,
+    "n_tiny": 5,
+    "n_train": 30000,
+    "perturbation_seed": 77001,
+    "probe_max_iter": 250,
+    "protocol_version": 2,
+    "test_seeds": [
+      9101,
+      9201,
+      9301
+    ],
+    "tiny_hidden": [
+      32,
+      32
+    ],
+    "tiny_max_iter": 250,
+    "topology_inventory": "protocol/topologies.json",
+    "topology_model": {
+      "features": "original_71_features_plus_current_lindistflow_voltage_extrema",
+      "hidden": [
+        64,
+        64
+      ],
+      "include_original_topology": true,
+      "max_iter": 250,
+      "scenarios_per_development_topology": 3000,
+      "target": "residual_of_exact_voltage_extrema_minus_lindistflow_extrema"
+    },
+    "training_seeds": [
+      4101,
+      4201,
+      4301
+    ]
+  },
+  "environment": {
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.4.6",
+      "pandapower": "3.5.5",
+      "pandas": "2.3.3",
+      "pyyaml": "6.0.3",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.17.1",
+      "threadpoolctl": "3.7.0"
+    },
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.11.14 (main, Oct  9 2025, 16:16:55) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "thread_environment": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "threadpools": [
+      {
+        "filepath": "/Users/mac001/Downloads/PhyRoute-Research-Paper/files/review/.venv/lib/python3.11/site-packages/sklearn/.dylibs/libomp.dylib",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libomp",
+        "user_api": "openmp",
+        "version": null
+      }
+    ]
+  },
+  "run_hash": "8cb0242b95738614d4bcb048900dc07da99e04dfb46149a77b77a0ff2bacd2fc",
+  "source_sha256": {
+    "checkpoint.py": "4843184db03d32c12b464d6a75ecddd97918232c904d486302433e08e9537a27",
+    "feeder.py": "4db7291289b1bb2544004879278b284f3e22712ae1354a54f367c46bccea36d0",
+    "lindistflow.py": "c68d1e1169b34361364a07876840b88ed8d34bb019be9dbd56be9155f8f94fec",
+    "models.py": "9be6f078dbbcb522a28f0de3967aaabec22ddba5677a66ff0b8552aba083976e",
+    "powerflow.py": "66dbd03fd3257dad9857d84744866425b0bb921ff369a518b02ba365c7746a4d",
+    "reference.py": "e349f727b301ce5a1f7f60061385dddaca524a001fa960b53833efe73b5e5c98",
+    "revised.py": "980e1876d6a67792a26a8700b5b8d3bc4e30542f20882cdf725dfd24095a4875",
+    "scenarios.py": "ae6f5357a309c017b2a3e4440085240164aee9930e2d7543d7e1ce2c1532f300",
+    "topology_model.py": "8557aaa048095791f3053b58b19fd0295e5afa0b1f150ad6967dd06182545eeb"
+  },
+  "topologies": [
+    {
+      "close_line": null,
+      "id": "base",
+      "open_line": null,
+      "partition": "base"
+    },
+    {
+      "close_line": 32,
+      "id": "close32_open01",
+      "open_line": 1,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 32,
+      "id": "close32_open02",
+      "open_line": 2,
+      "partition": "development"
+    },
+    {
+      "close_line": 32,
+      "id": "close32_open03",
+      "open_line": 3,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 32,
+      "id": "close32_open04",
+      "open_line": 4,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 32,
+      "id": "close32_open05",
+      "open_line": 5,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 32,
+      "id": "close32_open06",
+      "open_line": 6,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 32,
+      "id": "close32_open17",
+      "open_line": 17,
+      "partition": "development"
+    },
+    {
+      "close_line": 32,
+      "id": "close32_open18",
+      "open_line": 18,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 32,
+      "id": "close32_open19",
+      "open_line": 19,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 33,
+      "id": "close33_open08",
+      "open_line": 8,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 33,
+      "id": "close33_open09",
+      "open_line": 9,
+      "partition": "development"
+    },
+    {
+      "close_line": 33,
+      "id": "close33_open10",
+      "open_line": 10,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 33,
+      "id": "close33_open11",
+      "open_line": 11,
+      "partition": "development"
+    },
+    {
+      "close_line": 33,
+      "id": "close33_open12",
+      "open_line": 12,
+      "partition": "development"
+    },
+    {
+      "close_line": 33,
+      "id": "close33_open13",
+      "open_line": 13,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open01",
+      "open_line": 1,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open02",
+      "open_line": 2,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open03",
+      "open_line": 3,
+      "partition": "development"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open04",
+      "open_line": 4,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open05",
+      "open_line": 5,
+      "partition": "development"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open06",
+      "open_line": 6,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open07",
+      "open_line": 7,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open08",
+      "open_line": 8,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open09",
+      "open_line": 9,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open10",
+      "open_line": 10,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open17",
+      "open_line": 17,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open18",
+      "open_line": 18,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open19",
+      "open_line": 19,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 34,
+      "id": "close34_open20",
+      "open_line": 20,
+      "partition": "development"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open05",
+      "open_line": 5,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open06",
+      "open_line": 6,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open07",
+      "open_line": 7,
+      "partition": "development"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open08",
+      "open_line": 8,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open09",
+      "open_line": 9,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open10",
+      "open_line": 10,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open11",
+      "open_line": 11,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open12",
+      "open_line": 12,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open13",
+      "open_line": 13,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open14",
+      "open_line": 14,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open15",
+      "open_line": 15,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open16",
+      "open_line": 16,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open24",
+      "open_line": 24,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open25",
+      "open_line": 25,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open26",
+      "open_line": 26,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open27",
+      "open_line": 27,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open28",
+      "open_line": 28,
+      "partition": "development"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open29",
+      "open_line": 29,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open30",
+      "open_line": 30,
+      "partition": "development"
+    },
+    {
+      "close_line": 35,
+      "id": "close35_open31",
+      "open_line": 31,
+      "partition": "development"
+    },
+    {
+      "close_line": 36,
+      "id": "close36_open02",
+      "open_line": 2,
+      "partition": "development"
+    },
+    {
+      "close_line": 36,
+      "id": "close36_open03",
+      "open_line": 3,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 36,
+      "id": "close36_open04",
+      "open_line": 4,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 36,
+      "id": "close36_open21",
+      "open_line": 21,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 36,
+      "id": "close36_open22",
+      "open_line": 22,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 36,
+      "id": "close36_open23",
+      "open_line": 23,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 36,
+      "id": "close36_open24",
+      "open_line": 24,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 36,
+      "id": "close36_open25",
+      "open_line": 25,
+      "partition": "heldout"
+    },
+    {
+      "close_line": 36,
+      "id": "close36_open26",
+      "open_line": 26,
+      "partition": "development"
+    },
+    {
+      "close_line": 36,
+      "id": "close36_open27",
+      "open_line": 27,
+      "partition": "development"
+    }
+  ]
+}

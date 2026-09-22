@@ -1,0 +1,360 @@
+{
+  "definition": "All nonbaseline connected radial single branch exchanges of pandapower case33bw; line identifiers zero-based.",
+  "split_rule": "Two previously explored exchanges assigned to development, plus lowest 13 sha256 ranks of phyroute-v2-topology-split-20260922:<id>. Remaining 44 held out.",
+  "topologies": [
+    {
+      "id": "close32_open01",
+      "open_line": 1,
+      "close_line": 32,
+      "partition": "heldout"
+    },
+    {
+      "id": "close32_open02",
+      "open_line": 2,
+      "close_line": 32,
+      "partition": "development"
+    },
+    {
+      "id": "close32_open03",
+      "open_line": 3,
+      "close_line": 32,
+      "partition": "heldout"
+    },
+    {
+      "id": "close32_open04",
+      "open_line": 4,
+      "close_line": 32,
+      "partition": "heldout"
+    },
+    {
+      "id": "close32_open05",
+      "open_line": 5,
+      "close_line": 32,
+      "partition": "heldout"
+    },
+    {
+      "id": "close32_open06",
+      "open_line": 6,
+      "close_line": 32,
+      "partition": "heldout"
+    },
+    {
+      "id": "close32_open17",
+      "open_line": 17,
+      "close_line": 32,
+      "partition": "development"
+    },
+    {
+      "id": "close32_open18",
+      "open_line": 18,
+      "close_line": 32,
+      "partition": "heldout"
+    },
+    {
+      "id": "close32_open19",
+      "open_line": 19,
+      "close_line": 32,
+      "partition": "heldout"
+    },
+    {
+      "id": "close33_open08",
+      "open_line": 8,
+      "close_line": 33,
+      "partition": "heldout"
+    },
+    {
+      "id": "close33_open09",
+      "open_line": 9,
+      "close_line": 33,
+      "partition": "development"
+    },
+    {
+      "id": "close33_open10",
+      "open_line": 10,
+      "close_line": 33,
+      "partition": "heldout"
+    },
+    {
+      "id": "close33_open11",
+      "open_line": 11,
+      "close_line": 33,
+      "partition": "development"
+    },
+    {
+      "id": "close33_open12",
+      "open_line": 12,
+      "close_line": 33,
+      "partition": "development"
+    },
+    {
+      "id": "close33_open13",
+      "open_line": 13,
+      "close_line": 33,
+      "partition": "heldout"
+    },
+    {
+      "id": "close34_open01",
+      "open_line": 1,
+      "close_line": 34,
+      "partition": "heldout"
+    },
+    {
+      "id": "close34_open02",
+      "open_line": 2,
+      "close_line": 34,
+      "partition": "heldout"
+    },
+    {
+      "id": "close34_open03",
+      "open_line": 3,
+      "close_line": 34,
+      "partition": "development"
+    },
+    {
+      "id": "close34_open04",
+      "open_line": 4,
+      "close_line": 34,
+      "partition": "heldout"
+    },
+    {
+      "id": "close34_open05",
+      "open_line": 5,
+      "close_line": 34,
+      "partition": "development"
+    },
+    {
+      "id": "close34_open06",
+      "open_line": 6,
+      "close_line": 34,
+      "partition": "heldout"
+    },
+    {
+      "id": "close34_open07",
+      "open_line": 7,
+      "close_line": 34,
+      "partition": "heldout"
+    },
+    {
+      "id": "close34_open08",
+      "open_line": 8,
+      "close_line": 34,
+      "partition": "heldout"
+    },
+    {
+      "id": "close34_open09",
+      "open_line": 9,
+      "close_line": 34,
+      "partition": "heldout"
+    },
+    {
+      "id": "close34_open10",
+      "open_line": 10,
+      "close_line": 34,
+      "partition": "heldout"
+    },
+    {
+      "id": "close34_open17",
+      "open_line": 17,
+      "close_line": 34,
+      "partition": "heldout"
+    },
+    {
+      "id": "close34_open18",
+      "open_line": 18,
+      "close_line": 34,
+      "partition": "heldout"
+    },
+    {
+      "id": "close34_open19",
+      "open_line": 19,
+      "close_line": 34,
+      "partition": "heldout"
+    },
+    {
+      "id": "close34_open20",
+      "open_line": 20,
+      "close_line": 34,
+      "partition": "development"
+    },
+    {
+      "id": "close35_open05",
+      "open_line": 5,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open06",
+      "open_line": 6,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open07",
+      "open_line": 7,
+      "close_line": 35,
+      "partition": "development"
+    },
+    {
+      "id": "close35_open08",
+      "open_line": 8,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open09",
+      "open_line": 9,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open10",
+      "open_line": 10,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open11",
+      "open_line": 11,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open12",
+      "open_line": 12,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open13",
+      "open_line": 13,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open14",
+      "open_line": 14,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open15",
+      "open_line": 15,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open16",
+      "open_line": 16,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open24",
+      "open_line": 24,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open25",
+      "open_line": 25,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open26",
+      "open_line": 26,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open27",
+      "open_line": 27,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open28",
+      "open_line": 28,
+      "close_line": 35,
+      "partition": "development"
+    },
+    {
+      "id": "close35_open29",
+      "open_line": 29,
+      "close_line": 35,
+      "partition": "heldout"
+    },
+    {
+      "id": "close35_open30",
+      "open_line": 30,
+      "close_line": 35,
+      "partition": "development"
+    },
+    {
+      "id": "close35_open31",
+      "open_line": 31,
+      "close_line": 35,
+      "partition": "development"
+    },
+    {
+      "id": "close36_open02",
+      "open_line": 2,
+      "close_line": 36,
+      "partition": "development"
+    },
+    {
+      "id": "close36_open03",
+      "open_line": 3,
+      "close_line": 36,
+      "partition": "heldout"
+    },
+    {
+      "id": "close36_open04",
+      "open_line": 4,
+      "close_line": 36,
+      "partition": "heldout"
+    },
+    {
+      "id": "close36_open21",
+      "open_line": 21,
+      "close_line": 36,
+      "partition": "heldout"
+    },
+    {
+      "id": "close36_open22",
+      "open_line": 22,
+      "close_line": 36,
+      "partition": "heldout"
+    },
+    {
+      "id": "close36_open23",
+      "open_line": 23,
+      "close_line": 36,
+      "partition": "heldout"
+    },
+    {
+      "id": "close36_open24",
+      "open_line": 24,
+      "close_line": 36,
+      "partition": "heldout"
+    },
+    {
+      "id": "close36_open25",
+      "open_line": 25,
+      "close_line": 36,
+      "partition": "heldout"
+    },
+    {
+      "id": "close36_open26",
+      "open_line": 26,
+      "close_line": 36,
+      "partition": "development"
+    },
+    {
+      "id": "close36_open27",
+      "open_line": 27,
+      "close_line": 36,
+      "partition": "development"
+    }
+  ]
+}

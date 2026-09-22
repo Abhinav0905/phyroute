@@ -1,0 +1,16 @@
+{
+  "command": {
+    "command": "evaluate",
+    "config": "configs/revised.yaml",
+    "out": null,
+    "partition": "all",
+    "seed": null,
+    "test_seed": 9101,
+    "topology": "base",
+    "train_seed": 4301
+  },
+  "elapsed_s": 1.2002079486846924,
+  "error": "[Errno 2] No such file or directory: '/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/results/revised/data/test_9101__pv_shift.npz.tmp' -> '/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/results/revised/data/test_9101__pv_shift.npz'",
+  "error_type": "FileNotFoundError",
+  "traceback": "Traceback (most recent call last):\n  File \"/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/scripts/run_revised.py\", line 46, in main\n    experiment.evaluate(args.train_seed, args.test_seed, args.partition, args.topology)\n  File \"/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/phyroute/revised.py\", line 423, in evaluate\n    d = self.topology_data(test_seed, top, condition)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/phyroute/revised.py\", line 354, in topology_data\n    injections = self.test_data(seed, condition)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/phyroute/revised.py\", line 346, in test_data\n    save_arrays(path, d, identity)\n  File \"/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/phyroute/revised.py\", line 85, in save_arrays\n    temp.replace(path)\n  File \"/opt/homebrew/Cellar/python@3.11/3.11.14_3/Frameworks/Python.framework/Versions/3.11/lib/python3.11/pathlib.py\", line 1188, in replace\n    os.replace(self, target)\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/results/revised/data/test_9101__pv_shift.npz.tmp' -> '/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/results/revised/data/test_9101__pv_shift.npz'\n"
+}
