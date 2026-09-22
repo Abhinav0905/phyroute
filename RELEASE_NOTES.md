@@ -2,6 +2,12 @@
 
 Title: *PhyRoute: Voltage Screening under Feeder Reconfiguration*. Author: Kumar Abhinav. Release date: 22 September 2026. Repository: [Abhinav0905/phyroute](https://github.com/Abhinav0905/phyroute).
 
+Published records: [GitHub v0.2.0](https://github.com/Abhinav0905/phyroute/releases/tag/v0.2.0) and [Zenodo DOI 10.5281/zenodo.22905467](https://doi.org/10.5281/zenodo.22905467). The tag and archival record preserve source commit `0411bf66cfc53cbabf5e31b1d2b9d0d4ea944325`. See [PUBLICATION_RECEIPT.md](PUBLICATION_RECEIPT.md) for verification details.
+
+The subsequent `main` update adds the minted DOI to the manuscript availability paragraph and release documentation. It is separate from the archived v0.2.0 snapshot.
+
+The manifest on `main` describes the updated tree. Use `python scripts/package_review.py --manifest-only` after reviewed documentation changes to refresh it without replacing the published release ZIP. The immutable tag retains its original manifest.
+
 This software release includes a companion manuscript for author review. Author affiliation and email still require confirmation. The manuscript has not been submitted to the conference. A software release or archival deposit does not establish peer review or acceptance.
 
 ## What changed
@@ -32,4 +38,4 @@ The script excludes virtual environments, Python bytecode, temporary files, smok
 
 One exploratory parallel invocation encountered a shared temporary-file collision while creating an identical PV cache. A serial retry passed the content-hash checks. Preserve that failure log and its successful retry as an operational record. The documented pipeline runs serially and prepares shared caches before the crossed evaluations.
 
-The manuscript deliverables are the official SVProc LaTeX source and `output/pdf/PhyRoute_Revised_ICDLAI2026.pdf`. Citation metadata identifies the repository, version and release date. An archival DOI is added only after its record is verified. Unconfirmed affiliation and email remain omitted. Conference-submission status is independent of the software release and archival record.
+The manuscript deliverables are the official SVProc LaTeX source and `output/pdf/PhyRoute_Revised_ICDLAI2026.pdf`. Citation metadata identifies the repository, version, release date and verified Zenodo DOI. Unconfirmed affiliation and email remain omitted. The manuscript has not been submitted through CMT; conference-submission status is independent of the published software release and archival record.

@@ -1,6 +1,6 @@
 {
-  "input": "/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/paper/main_template.tex",
-  "pdf": "/Users/mac001/Downloads/PhyRoute-Research-Paper/files/phyroute-revised/paper/build/main_template.pdf",
+  "input": "paper/main_template.tex",
+  "pdf": "paper/build/main_template.pdf",
   "engine": "Tectonic 0.17.0",
   "overfull_boxes": [],
   "undefined_references": false,

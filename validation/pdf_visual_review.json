@@ -1,9 +1,9 @@
 {
   "passed": true,
-  "reviewed_at_utc": "2026-09-22T20:24:30.456953+00:00",
-  "reviewer": "Codex visual page review",
+  "reviewed_at_utc": "2026-09-22T21:34:37.616460+00:00",
+  "reviewer": "Codex page review: literature_conference pages 1-8; root pages 9-13",
   "pdf": "output/pdf/PhyRoute_Revised_ICDLAI2026.pdf",
-  "pdf_sha256": "f3b2d434a969a658df58ea613f30e43c2f42509e7c6f9e708e606ccba254f24d",
+  "pdf_sha256": "dd77642df915fda3e9c87d813101f39913251de05aa911b8ca5316fd47f96937",
   "pages": 13,
   "render_dpi": 150,
   "pages_reviewed": [
@@ -28,7 +28,8 @@
     "No unresolved citations or missing glyphs",
     "Figure 1 caption matches frozen 10 percent plot",
     "Small nonzero table entries are not printed as zero",
-    "Official SVProc A4 layout; no running heads or page numbers"
+    "Official SVProc A4 layout; no running heads or page numbers",
+    "Repository URL and verified release DOI fit within the page 12 availability paragraph"
   ],
   "remaining_author_inputs": [
     "Affiliation and correspondence email",
@@ -37,7 +38,7 @@
   "source_sha256": {
     "paper/main_template.tex": "6975775eaf8f547b82f9fb892382ca3524bd2a8aa61e5093695220d62b7df5b5",
     "paper/metadata.tex": "54d550893635a3a42df4ec75f5a3d3ecb11e1badfb90c56a72a0896d5e5bc23c",
-    "paper/manuscript_body.tex": "1e594f82c13bcf5368a955201e93b3d0c39de6616900fff7c40e5bfb27aee00f",
+    "paper/manuscript_body.tex": "07a05f4183878c8313873aff6b79d9787c425c4b862da36c902c8b21a2ce88db",
     "paper/methods_draft.tex": "bb237e96208da3df54c82fbbdd440c2ac6378642912480091425bf007c1af593",
     "paper/introduction_related.tex": "d0b020096dea997406d437ebf8cb163702cf618b323a2f57623eb9346fef212c",
     "paper/references.bib": "7b693af9d7ad200683227907392e0339837ba339887046731ca9dce547d11d93"
@@ -54,7 +55,7 @@
     "page-09.png": "aa8c787c4549358b33f975edcf8c5f6cc317de50d09ff0c4b460917c64c8239b",
     "page-10.png": "4c1412ffc2bb7ccd02f6838712d53731bda8151fe66a899b13eb449e1d74b7e0",
     "page-11.png": "eac0338782b5e8837e461c41c95b66dd024e4bf6ba0117b5869f7a8391a417a9",
-    "page-12.png": "bf5586925a80aedcd01d9f4760a2b17e10b0c704fce850c6d7f9a50f7e8d32e1",
-    "page-13.png": "309552af16e4c91eecc3d8b6bf22933de362548a9ec8fd9ce18fac80ef9cbd5e"
+    "page-12.png": "c7cb1dbedb3e7d2a306fe4f5c78c83861e30f2bc0293ab0d05ca92902aba1b0b",
+    "page-13.png": "d9464ae367ee4ce1e4c47f645703f48a291fb17cd6e214d24b35eb72a10dc416"
   }
 }

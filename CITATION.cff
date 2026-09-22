@@ -5,6 +5,7 @@ type: software
 version: 0.2.0
 date-released: '2026-09-22'
 repository-code: "https://github.com/Abhinav0905/phyroute"
+doi: "10.5281/zenodo.22905467"
 license: Apache-2.0
 authors:
   - family-names: Abhinav

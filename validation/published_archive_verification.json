@@ -1,0 +1,26 @@
+{
+  "github_repository": "https://github.com/Abhinav0905/phyroute",
+  "github_release": "https://github.com/Abhinav0905/phyroute/releases/tag/v0.2.0",
+  "source_commit": "0411bf66cfc53cbabf5e31b1d2b9d0d4ea944325",
+  "doi": "10.5281/zenodo.22905467",
+  "concept_doi": "10.5281/zenodo.22905466",
+  "zenodo_record_id": 22905467,
+  "zenodo_published_at": "2026-09-22T21:28:02.340647+00:00",
+  "github_asset_sha256": "5e583e347d3a0d533654239a272788b1c8cb75e3b9390220ced71fc9a5e071b6",
+  "zenodo_file_sha256": "19627797fd959e7119f370de1d682b21af20c6034c2a9e8ea9c1950978f225ab",
+  "zenodo_file_md5": "md5:20745d8275936908ce189f451f706476",
+  "verified_manifest_files": 1467,
+  "total_archive_files": 1468,
+  "run_hash": "8cb0242b95738614d4bcb048900dc07da99e04dfb46149a77b77a0ff2bacd2fc",
+  "archive_crc_passed": true,
+  "file_hashes_passed": true,
+  "github_integration_enabled": true,
+  "credential_handling": "Existing GitHub CLI and Zenodo browser sessions used; supplied PAT was not used or stored.",
+  "verified_at_utc": "2026-09-22T21:34:37.616460+00:00",
+  "post_publication_manuscript": {
+    "path": "output/pdf/PhyRoute_Revised_ICDLAI2026.pdf",
+    "sha256": "dd77642df915fda3e9c87d813101f39913251de05aa911b8ca5316fd47f96937",
+    "pages": 13,
+    "relation": "DOI citation update on main after immutable v0.2.0 archive publication; scientific text unchanged."
+  }
+}

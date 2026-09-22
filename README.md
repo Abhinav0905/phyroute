@@ -100,6 +100,8 @@ The manuscript uses the **official Springer SVProc LaTeX class** supplied for th
 
 ## Release and license
 
-[CITATION.cff](CITATION.cff) and `.zenodo.json` contain the v0.2.0 software metadata. The [GitHub releases page](https://github.com/Abhinav0905/phyroute/releases) identifies tagged versions. [RELEASE_NOTES.md](RELEASE_NOTES.md) describes the compact release package, `release_manifest.json` and separately regenerable caches. `scripts/package_review.py` creates and verifies the archive after the PDF review and experiment audit pass. An archival DOI is added only after its record is verified. Conference submission remains a separate step after manuscript review.
+The [GitHub v0.2.0 release](https://github.com/Abhinav0905/phyroute/releases/tag/v0.2.0) is published and archived on Zenodo at [doi:10.5281/zenodo.22905467](https://doi.org/10.5281/zenodo.22905467). [CITATION.cff](CITATION.cff) provides citation metadata. See [PUBLICATION_RECEIPT.md](PUBLICATION_RECEIPT.md) for the verified publication records.
+
+The tag and Zenodo archive preserve the release snapshot at commit `0411bf66cfc53cbabf5e31b1d2b9d0d4ea944325`. The `main` branch adds the DOI to the manuscript availability text and release documentation after publication; those edits are separate from the tagged snapshot. [RELEASE_NOTES.md](RELEASE_NOTES.md) describes the compact package, `release_manifest.json` and separately regenerable caches. `scripts/package_review.py` creates and verifies the archive after the PDF review and experiment audit pass. Conference submission remains a separate step after manuscript review.
 
 Code is licensed under Apache-2.0; see [LICENSE](LICENSE). Publisher template files retain their own notices. AI assistance contributed to ideation, implementation, auditing and drafting; the manuscript records that assistance for human review.

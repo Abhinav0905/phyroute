@@ -15,13 +15,13 @@
     },
     {
       "path": "AUTHOR_CHECKLIST.md",
-      "bytes": 3381,
-      "sha256": "5f87b57be8a883f4bcc96f788c405d8a4ecf9fc8da6d09f7bf90507ce02ec9d9"
+      "bytes": 3576,
+      "sha256": "456573dd6347d2cefe01feee2a830ce505ee467e8a679a10aa7a86ae9bb5f1c9"
     },
     {
       "path": "CITATION.cff",
-      "bytes": 1589,
-      "sha256": "0ba9e114b1fe01cda6490fe799c4e1cc726816df6765cc43e934507278d87052"
+      "bytes": 1620,
+      "sha256": "76e01eb3fb79488889983e1c7727be49ab68f2c59ea15adaab87ea70e95a43fd"
     },
     {
       "path": "LICENSE",
@@ -34,14 +34,19 @@
       "sha256": "2e3b2b23f1569bd24263436b1db3b3598b4f7a2be467e37719417a1fe15bc4c6"
     },
     {
+      "path": "PUBLICATION_RECEIPT.md",
+      "bytes": 3195,
+      "sha256": "6597b54e4b0b8934fa70f8d4db43ba82eb42a852fee9c0f0f7a0052671846a44"
+    },
+    {
       "path": "README.md",
-      "bytes": 10731,
-      "sha256": "ca78d3da57bc18d93415838f8c68ddbf5391f3ae0cde26d6186e569ff62043be"
+      "bytes": 11095,
+      "sha256": "f711e3c5a656c4e73a6646c47fa836d96e2ba336bc223831986d80534ee6b40d"
     },
     {
       "path": "RELEASE_NOTES.md",
-      "bytes": 5901,
-      "sha256": "4c877026d1c7b24799d249b0734ba592cbf7a97cdc5d56648c443d88e116f475"
+      "bytes": 6697,
+      "sha256": "4b32f819885a280f72300d575eaac86c5fe2d971e7bb67a57fbc7e1f95a4eccf"
     },
     {
       "path": "configs/revised.yaml",
@@ -180,13 +185,13 @@
     },
     {
       "path": "output/pdf/PhyRoute_Revised_ICDLAI2026.pdf",
-      "bytes": 147615,
-      "sha256": "f3b2d434a969a658df58ea613f30e43c2f42509e7c6f9e708e606ccba254f24d"
+      "bytes": 148126,
+      "sha256": "dd77642df915fda3e9c87d813101f39913251de05aa911b8ca5316fd47f96937"
     },
     {
       "path": "paper/README.md",
-      "bytes": 2448,
-      "sha256": "2ab56e7d1c48337850a587bf2fe453ddf848a8fccca2dc691221b5feb73b1080"
+      "bytes": 2809,
+      "sha256": "9ec94615a7a8aeec7280e68c6949bbe01a6c0453334a3425154987af5c91edf2"
     },
     {
       "path": "paper/RENDERING.md",
@@ -230,8 +235,8 @@
     },
     {
       "path": "paper/manuscript_body.tex",
-      "bytes": 16022,
-      "sha256": "1e594f82c13bcf5368a955201e93b3d0c39de6616900fff7c40e5bfb27aee00f"
+      "bytes": 16230,
+      "sha256": "07a05f4183878c8313873aff6b79d9787c425c4b862da36c902c8b21a2ce88db"
     },
     {
       "path": "paper/metadata.tex",
@@ -7215,8 +7220,8 @@
     },
     {
       "path": "scripts/package_review.py",
-      "bytes": 4676,
-      "sha256": "4746274decfbe7ec28f8dffefb90843f794d7639ebf8dfcd4f8d47f91972052f"
+      "bytes": 5304,
+      "sha256": "05da476d8ca76c25b0f2ae2c671274f527c126ef4ba5bbfcf617482d77195470"
     },
     {
       "path": "scripts/run_pipeline.py",
@@ -7285,23 +7290,28 @@
     },
     {
       "path": "validation/manuscript_claim_audit.json",
-      "bytes": 1422,
-      "sha256": "934ec2596b9f22d66a0a8381542348aaad7d079d428450166b745660aecc143b"
+      "bytes": 1917,
+      "sha256": "f0939c78485338e672a218cd28bd3b29b5680c9058ddccb08f3a8c1eb4a07cef"
     },
     {
       "path": "validation/paper_build.json",
-      "bytes": 433,
-      "sha256": "bddeca5603ba06bad7223402644c87b88d421ce6f393b8ce035f01742b275d75"
+      "bytes": 291,
+      "sha256": "58a308e37f7c452017c2630fcdcbb6e69e625f34016714f969ffe450d9b4b5d6"
     },
     {
       "path": "validation/paper_pdfinfo.txt",
       "bytes": 593,
-      "sha256": "2b548c0c3a19a256eb629d1ee9f78e5aff6283999397e668b4b210cd2730c59b"
+      "sha256": "637459c7eb41a8437a3c7085bb0c8d75a23cabb25ca8dc5d90470c5b206e7d46"
     },
     {
       "path": "validation/pdf_visual_review.json",
-      "bytes": 2727,
-      "sha256": "85c195b6cac1d441f5197f1b33aa32cb2c35d17de9211ec3d19419db0ab39592"
+      "bytes": 2863,
+      "sha256": "a949f27cc89a4a46c49e2a04a3878d9b3e8ffba7151df0875370130adfd9af46"
+    },
+    {
+      "path": "validation/published_archive_verification.json",
+      "bytes": 1370,
+      "sha256": "269ffab0b647dad55991934806157f41b897b37d22607da6cfa15485ce66bfb4"
     },
     {
       "path": "validation/reference_failure_diagnosis.json",
@@ -8422,5 +8432,5 @@
     }
   ],
   "omission_note": "Raw scenario, physics and prediction arrays remain in the full local workspace. The archive retains their metadata and hashes. Regenerate with scripts/run_pipeline.py before replaying the complete independent audit. Saved model arrays are included.",
-  "manifest_note": "The manifest itself is excluded from its own digest list."
+  "manifest_note": "This manifest describes its accompanying tree. The manifest itself is excluded from its own digest list. Published tags retain their original manifest."
 }

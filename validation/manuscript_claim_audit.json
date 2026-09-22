@@ -1,7 +1,7 @@
 {
   "status": "No numerical or scientific blockers found in reviewed prose",
   "files_sha256": {
-    "paper/manuscript_body.tex": "1e594f82c13bcf5368a955201e93b3d0c39de6616900fff7c40e5bfb27aee00f",
+    "paper/manuscript_body.tex": "07a05f4183878c8313873aff6b79d9787c425c4b862da36c902c8b21a2ce88db",
     "paper/introduction_related.tex": "d0b020096dea997406d437ebf8cb163702cf618b323a2f57623eb9346fef212c",
     "paper/methods_draft.tex": "bb237e96208da3df54c82fbbdd440c2ac6378642912480091425bf007c1af593"
   },
@@ -23,5 +23,12 @@
     "Residual-extrema definition retains its meaning after typesetting change"
   ],
   "independent_integrity_passed": true,
-  "integrity_checks": 768
+  "integrity_checks": 768,
+  "publication_link_amendment": {
+    "reviewed_at_utc": "2026-09-22T21:34:37.616460+00:00",
+    "prior_body_sha256": "1e594f82c13bcf5368a955201e93b3d0c39de6616900fff7c40e5bfb27aee00f",
+    "scope": "Only the data and code paragraph and adjacent release-pending comment changed. All scientific prose, results and claims remain byte-identical to the reviewed tagged version.",
+    "github_repository": "https://github.com/Abhinav0905/phyroute",
+    "verified_doi": "10.5281/zenodo.22905467"
+  }
 }

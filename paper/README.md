@@ -2,7 +2,9 @@
 
 **PhyRoute: Voltage Screening under Feeder Reconfiguration** is the revised author-review manuscript. The current PDF has 13 A4 pages, four tables, two figures and 15 cited references. Editable LaTeX sources are included.
 
-The delivery PDF is [`output/pdf/PhyRoute_Revised_ICDLAI2026.pdf`](../output/pdf/PhyRoute_Revised_ICDLAI2026.pdf). Author details and submission checks are tracked in [`AUTHOR_CHECKLIST.md`](../AUTHOR_CHECKLIST.md). The manuscript accompanies the [v0.2.0 software release](https://github.com/Abhinav0905/phyroute) and has not been submitted to the conference. Software release and archival deposit do not establish peer review or acceptance.
+The delivery PDF is [`output/pdf/PhyRoute_Revised_ICDLAI2026.pdf`](../output/pdf/PhyRoute_Revised_ICDLAI2026.pdf). Author details and submission checks are tracked in [`AUTHOR_CHECKLIST.md`](../AUTHOR_CHECKLIST.md). The manuscript accompanies the published [GitHub v0.2.0 release](https://github.com/Abhinav0905/phyroute/releases/tag/v0.2.0) and [Zenodo archive](https://doi.org/10.5281/zenodo.22905467). It has not been submitted to the conference through CMT. Software release and archival deposit do not establish peer review or acceptance.
+
+The v0.2.0 archive preserves the tagged source snapshot. The `main` manuscript adds the DOI to its data-and-code availability paragraph after publication. See [PUBLICATION_RECEIPT.md](../PUBLICATION_RECEIPT.md) for the source commit and publication records.
 
 ## Build
 

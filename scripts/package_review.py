@@ -1,5 +1,6 @@
 """Build and verify a compact reproducibility archive without publishing it."""
 from pathlib import Path
+import argparse
 import hashlib
 import json
 import zipfile
@@ -48,6 +49,10 @@ def regenerable_cache(path):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--manifest-only", action="store_true",
+                        help="Refresh the current tree manifest without replacing any release ZIP.")
+    args = parser.parse_args()
     if not PDF.is_file():
         raise SystemExit("Copy the inspected final PDF to output/pdf before packaging.")
     qa = json.loads((ROOT / "validation/pdf_visual_review.json").read_text())
@@ -73,10 +78,15 @@ def main():
         "omission_note": "Raw scenario, physics and prediction arrays remain in the full local workspace. "
                          "The archive retains their metadata and hashes. Regenerate with scripts/run_pipeline.py "
                          "before replaying the complete independent audit. Saved model arrays are included.",
-        "manifest_note": "The manifest itself is excluded from its own digest list.",
+        "manifest_note": "This manifest describes its accompanying tree. The manifest itself is "
+                         "excluded from its own digest list. Published tags retain their original manifest.",
     }
     manifest_path = ROOT / "release_manifest.json"
     manifest_path.write_text(json.dumps(manifest, indent=2) + "\n")
+    if args.manifest_only:
+        print(json.dumps({"manifest": str(manifest_path), "included_files": len(files) + 1,
+                          "omitted_cache_files": len(omitted), "archive_unchanged": True}, indent=2))
+        return
     OUTPUT.mkdir(exist_ok=True)
     with zipfile.ZipFile(ARCHIVE, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
         for entry in files:
